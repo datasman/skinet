@@ -25,17 +25,8 @@
         </section>
         <section class="col-9">
             <div class="d-flex justify-content-between align-items-center pb-2">
-<<<<<<< HEAD
-                <app-paging-header
-                [totalCount] ="totalCount"
-                [pageNumber] = "shopParams.pageNumber"
-                [pageSize] = "shopParams.pageSize"
-                ></app-paging-header>
-
-=======
                 <app-paging-header [totalCount]="totalCount" [pageNumber]="shopParams.pageNumber"
                     [pageSize]="shopParams.pageSize"></app-paging-header>
->>>>>>> 28687429caa5c4adf4a5dc3d1ed17b296df9d415
                 <div class="d-flex mt-2">
                     <input (keyup.enter)="onSearch()" type="text" placeholder="Search" class="form-control me-2"
                         #search>
@@ -53,18 +44,9 @@
 
             </div>
 
-<<<<<<< HEAD
-            <div class="d-flex justify-content-center" *ngIf="totalCount > 0"> 
-                <app-pager
-                    [totalCount]="totalCount"
-                    [pageSize]="shopParams.pageSize"
-                    (pageChanged)="onPageChanged($event)"
-                ></app-pager>
-=======
             <div class="d-flex justify-content-center" *ngIf="totalCount > 0">
                 <app-pager [totalCount]="totalCount" [pageSize]="shopParams.pageSize"
                     (pageChanged)="onPageChanged($event)"></app-pager>
->>>>>>> 28687429caa5c4adf4a5dc3d1ed17b296df9d415
             </div>
         </section>
 

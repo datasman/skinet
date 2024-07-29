@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-<section class="py-5" style="margin-top: 105px; background-color: #f5f5f5;">
-    <div class="container">
-        <div class="row d-flex align-items-center">
-            <div class="col-9">
-                <h1>Title goes here</h1>
-            </div>
-            <div class="col-3">
-                <nav>
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Library</li>
-                    </ol>
-                  </nav>
-            </div>
-
-        </div>
-    </div>
-</section>
-=======
 <ng-container *ngIf="$any(bcService.breadcrumbs$ | async) as breadcrumbs">
   <section *ngIf="breadcrumbs [breadcrumbs.length-1].label !=='Home'" class="py-5 mb-3"
     style="margin-top: 105px; background-color: #f5f5f5;">
@@ -35,4 +15,3 @@
     </div>
   </section>
 </ng-container>
->>>>>>> 28687429caa5c4adf4a5dc3d1ed17b296df9d415
