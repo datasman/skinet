@@ -7,13 +7,17 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ServerErrorComponent } from './server-error/server-error.component';
 import { ToastrModule } from 'ngx-toastr';
 import { SectionHeaderComponent } from './section-header/section-header.component';
+<<<<<<< HEAD
 
 
+=======
+import { BreadcrumbComponent, BreadcrumbModule } from 'xng-breadcrumb';
+import { NgxSpinnerModule } from 'ngx-spinner';
+>>>>>>> 28687429caa5c4adf4a5dc3d1ed17b296df9d415
 
 @NgModule({
   declarations: [
-
-    NavBarComponent,
+     NavBarComponent,
      TestErrorComponent,
      NotFoundComponent,
      ServerErrorComponent,
@@ -25,12 +29,19 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',
       preventDuplicates: true
-    })
+    }),
+    BreadcrumbModule,
+    NgxSpinnerModule
   ],
 
   exports: [
     NavBarComponent,
+<<<<<<< HEAD
     SectionHeaderComponent
+=======
+    SectionHeaderComponent,
+    NgxSpinnerModule
+>>>>>>> 28687429caa5c4adf4a5dc3d1ed17b296df9d415
     
   ]
 
